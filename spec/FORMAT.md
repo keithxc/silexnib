@@ -160,6 +160,25 @@ When merging local page `A` and remote page `B` (for example after concurrent of
 
 ---
 
-## 5. Reference Implementation
+## 5. Reference Implementations (CC0 1.0 Public Domain)
 
-See [`ilp1_tool.py`](./ilp1_tool.py) in this directory for a zero-dependency Python 3 parser, inspector, and sample generator released under CC0 1.0 Public Domain.
+- **Single-header pure C99 codec & CRDT merger**: [`ilp1.h`](./ilp1.h) (`stb` style, zero dependencies, `#define ILP1_IMPLEMENTATION`, includes `ilp1_decode`, `ilp1_encode`, `ilp1_encode_to`, and lossless `ilp1_merge`; verified byte-for-byte against SilexNib's native C++20 implementation via [`ilp1_test.c`](./ilp1_test.c)).
+- **Python 3 parser & inspector**: [`ilp1_tool.py`](./ilp1_tool.py) (zero dependencies, CLI inspector for `*.ilp` and `*.snb/`).
+
+```c
+#define ILP1_IMPLEMENTATION
+#include "ilp1.h"
+
+ilp1_page a, b, merged;
+if (ilp1_decode(bytes_a, len_a, &a) == ILP1_OK &&
+    ilp1_decode(bytes_b, len_b, &b) == ILP1_OK &&
+    ilp1_merge(&a, &b, &merged) == ILP1_OK) {
+    uint8_t *out = NULL;
+    size_t out_len = 0;
+    ilp1_encode(&merged, &out, &out_len);
+    ilp1_free(out);
+    ilp1_page_free(&merged);
+}
+ilp1_page_free(&a);
+ilp1_page_free(&b);
+```

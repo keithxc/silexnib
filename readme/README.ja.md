@@ -45,6 +45,7 @@
 アプリ本体は無料で配布（ソース非公開）していますが、**手書きファイル形式（`ILP1` と `*.snb/`）は [CC0 1.0 パブリックドメイン](../LICENSE-SPEC) として完全公開**しています。
 
 - 仕様書：[`spec/FORMAT.md`](../spec/FORMAT.md)
+- 単一ヘッダー純 C99 コーデック＆CRDT マージ（`stb` 形式・依存ゼロ）：[`spec/ilp1.h`](../spec/ilp1.h)（テスト：[`spec/ilp1_test.c`](../spec/ilp1_test.c)）
 - Python 3 リファレンスパーサー：[`spec/ilp1_tool.py`](../spec/ilp1_tool.py)
 
 他社ノートアプリ・変換ツールからの読み書き互換実装を歓迎します。お問い合わせ・バグ報告は [GitHub Issues](https://github.com/keithxc/silexnib/issues) へどうぞ。

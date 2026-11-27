@@ -45,6 +45,7 @@
 SilexNib 앱 바이너리는 무료로 배포(소스 비공개)되지만, **필기 파일 포맷(`ILP1` 및 `*.snb/`)은 [CC0 1.0 퍼블릭 도메인](../LICENSE-SPEC)으로 완전 공개**되어 있습니다.
 
 - 포맷 명세: [`spec/FORMAT.md`](../spec/FORMAT.md)
+- 단일 헤더 순수 C99 코덱 & CRDT 병합 라이브러리(`stb` 스타일, 의존성 없음): [`spec/ilp1.h`](../spec/ilp1.h) (테스트: [`spec/ilp1_test.c`](../spec/ilp1_test.c))
 - Python 3 참조 파서: [`spec/ilp1_tool.py`](../spec/ilp1_tool.py)
 
 다른 노트 앱과 변환 도구의 호환 구현을 환영합니다. 버그 제보 및 제안은 [GitHub Issues](https://github.com/keithxc/silexnib/issues)를 이용해 주세요.

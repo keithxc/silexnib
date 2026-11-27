@@ -57,6 +57,7 @@
 SilexNib 應用程式免費提供使用（程式碼不開源），但**底層手寫檔案格式（`ILP1` 與 `*.snb/`）以 [CC0 1.0 公眾領域](LICENSE-SPEC) 完全公開**：
 
 - 完整二進位與 JSON 規範：**[`spec/FORMAT.md`](../spec/FORMAT.md)**
+- 單標頭檔純 C99 編解碼與 CRDT 合併庫（`stb` 風格、零外部相依）：**[`spec/ilp1.h`](../spec/ilp1.h)**（測試：[`spec/ilp1_test.c`](../spec/ilp1_test.c)）
 - 零相依 Python 3 參考解析工具：**[`spec/ilp1_tool.py`](../spec/ilp1_tool.py)**
 
 誠摯歡迎其他筆記軟體、手寫應用與轉換工具實作相容，讓手寫筆記永久開放流通。

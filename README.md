@@ -81,6 +81,7 @@
 While SilexNib's application binaries are distributed free of charge with proprietary source code, **the handwriting file formats (`ILP1` `*.ilp` and `*.snb/`) are completely open and dedicated to the Public Domain ([CC0 1.0](LICENSE-SPEC))**.
 
 - Full binary & JSON specification: **[`spec/FORMAT.md`](spec/FORMAT.md)**
+- Single-header pure C99 codec & CRDT merger (`stb` style, zero dependencies): **[`spec/ilp1.h`](spec/ilp1.h)** (tests: [`spec/ilp1_test.c`](spec/ilp1_test.c))
 - Zero-dependency Python 3 reference parser & inspector: **[`spec/ilp1_tool.py`](spec/ilp1_tool.py)**
 
 We warmly encourage other Markdown editors, handwriting apps, sync tools, and converters to read, write, and interoperate with `ILP1` and `*.snb/`!

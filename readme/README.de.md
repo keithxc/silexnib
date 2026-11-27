@@ -45,6 +45,7 @@
 Die SilexNib-Anwendung ist kostenlos nutzbar (Quellcode proprietär), während **die Dateiformate `ILP1` und `*.snb/` vollständig offen unter [CC0 1.0 Public Domain](../LICENSE-SPEC) stehen**:
 
 - Spezifikation: [`spec/FORMAT.md`](../spec/FORMAT.md)
+- Single-Header-C99-Codec & CRDT-Merger (`stb`-Stil, ohne Abhängigkeiten): [`spec/ilp1.h`](../spec/ilp1.h) (Tests: [`spec/ilp1_test.c`](../spec/ilp1_test.c))
 - Python-3-Referenzparser: [`spec/ilp1_tool.py`](../spec/ilp1_tool.py)
 
 Andere Apps und Konverter sind herzlich eingeladen, `ILP1` und `*.snb/` zu unterstützen. Feedback und Fehlerberichte bitte über [GitHub Issues](https://github.com/keithxc/silexnib/issues).
