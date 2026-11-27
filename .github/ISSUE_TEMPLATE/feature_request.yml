@@ -1,0 +1,23 @@
+name: Feature Request / Format Interop
+description: Suggest an improvement or discuss ILP1 / .snb format compatibility
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Markdown / Daily Notes
+        - Handwriting Notebooks (.snb / .ilp)
+        - Built-in LAN / Tailscale Sync
+        - Open Format Interoperability (ILP1 / .xopp / PDF)
+        - UI / Localization
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Proposal
+      description: Describe your workflow and how this would help.
+    validations:
+      required: true

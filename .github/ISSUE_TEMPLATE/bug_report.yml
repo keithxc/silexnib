@@ -1,0 +1,30 @@
+name: Bug Report
+description: Report a problem in SilexNib (macOS, Linux, iPadOS, or iOS)
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - iPadOS
+        - iOS (iPhone)
+        - macOS
+        - Linux (Wayland / X11)
+        - Cross-device Sync
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App Version & Build
+      placeholder: "e.g. 0.2.0 (4)"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Clear steps to reproduce and what you expected to see.
+    validations:
+      required: true

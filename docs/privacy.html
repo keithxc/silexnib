@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — SilexNib</title>
+  <meta name="description" content="SilexNib Privacy Policy: 100% offline local storage, zero data collection, zero analytics, zero cloud servers." />
+  <link rel="icon" type="image/svg+xml" href="assets/silexnib.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/silexnib.svg" alt="SilexNib" />
+        <span>SilexNib</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Overview</a>
+        <a href="https://github.com/keithxc/silexnib/blob/main/spec/FORMAT.md">Open Format</a>
+        <a href="https://github.com/keithxc/silexnib/releases">Releases</a>
+        <a class="active" href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <select id="langPicker" class="lang-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="zh-TW">繁體中文（台灣）</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="de">Deutsch</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- English -->
+    <article class="doc" data-lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective Date: November 27, 2026 · Applies to SilexNib (iOS, iPadOS, macOS, and Linux)</p>
+      <div class="callout">
+        <strong>Summary:</strong> SilexNib does <strong>not</strong> collect, transmit, sell, or share any personal data. All notes, handwriting pages, PDFs, and sync credentials stay exclusively on your own devices.
+      </div>
+
+      <h2>1. Data Collection</h2>
+      <p>SilexNib operates completely offline and requires no user account, registration, or cloud service. Specifically, SilexNib collects <strong>zero</strong>:</p>
+      <ul>
+        <li>Personal identifiers, names, email addresses, or contact details;</li>
+        <li>Note contents, handwriting strokes, attachments, filenames, or vault metadata;</li>
+        <li>Usage analytics, telemetry, crash trackers, or advertising identifiers (IDFA);</li>
+        <li>Third-party SDK tracking data (SilexNib includes no analytics, ad, or telemetry SDKs).</li>
+      </ul>
+
+      <h2>2. Local On-Device Storage</h2>
+      <p>Your Markdown notes, attachments (<code>*.assets/</code>), PDFs, and handwriting notebooks (<code>*.snb/</code> and <code>*.ilp</code>) are stored directly in local folders you control (App Private Storage visible in Apple Files on iOS/iPadOS, or your chosen folder on macOS/Linux). Device sync keys and paired device fingerprints are stored strictly in your operating system's private application data directory.</p>
+
+      <h2>3. Optional Peer-to-Peer Sync (LAN / Tailscale)</h2>
+      <p>If you choose to pair your own devices using SilexNib's built-in sync, connections are made <strong>directly between your devices</strong> over your local network or private Tailscale network using mutual TLS 1.3 (mTLS) with SHA-256 certificate fingerprint pinning. No relay servers, developer servers, or cloud storage providers ever see or store your files.</p>
+
+      <h2>4. System Permissions</h2>
+      <ul>
+        <li><strong>Camera (optional, iOS/iPadOS):</strong> Used solely when you open the pairing scanner to scan a one-time QR code displayed by your own desktop SilexNib. Images from the camera are processed on-device in memory and are never saved or transmitted.</li>
+        <li><strong>Local Network (optional, iOS/iPadOS):</strong> Used solely to communicate directly with your paired computers on your LAN or private VPN/Tailscale network for encrypted vault synchronization.</li>
+        <li><strong>Photo Library (optional, iOS/iPadOS):</strong> Used solely when you explicitly choose to insert a photo into a note's local <code>.assets/</code> folder.</li>
+      </ul>
+
+      <h2>5. Children's Privacy</h2>
+      <p>Because SilexNib collects no personal information from anyone, it does not knowingly collect personal information from children under 13 (or the applicable age in your jurisdiction).</p>
+
+      <h2>6. Changes &amp; Contact</h2>
+      <p>Any future changes to this Privacy Policy will be published on this page with an updated effective date. For privacy questions or support, please open an issue at <a href="https://github.com/keithxc/silexnib/issues">github.com/keithxc/silexnib/issues</a>.</p>
+    </article>
+
+    <!-- Taiwan Traditional Chinese -->
+    <article class="doc" data-lang="zh-TW">
+      <h1>隱私權政策</h1>
+      <p class="meta">生效日期：2026 年 11 月 27 日 · 適用於 SilexNib（iOS、iPadOS、macOS 與 Linux）</p>
+      <div class="callout">
+        <strong>重點摘要：</strong>SilexNib <strong>不會</strong>蒐集、上傳、出售或分享任何個人資料。您的所有筆記、手寫內容、PDF 與裝置配對金鑰皆完全保留在您自己的裝置本機。
+      </div>
+
+      <h2>1. 資料蒐集說明</h2>
+      <p>SilexNib 為純離線本機應用程式，無需註冊帳號，也不連線至任何開發者伺服器。我們<strong>完全不蒐集</strong>以下資訊：</p>
+      <ul>
+        <li>任何個人識別資訊、姓名、電子郵件或聯絡方式；</li>
+        <li>筆記正文、手寫筆跡、圖片附件、檔案名稱或知識庫結構；</li>
+        <li>使用行為統計、遙測資料、崩潰追蹤或廣告識別碼（IDFA）；</li>
+        <li>任何第三方廣告或統計 SDK（本軟體未整合任何第三方追蹤套件）。</li>
+      </ul>
+
+      <h2>2. 本機儲存</h2>
+      <p>您的 Markdown 筆記、附件資料夾（<code>*.assets/</code>）、PDF 與手寫筆記本（<code>*.snb/</code>、<code>*.ilp</code>）一律儲存於您本機可控的資料夾（iOS/iPadOS 為可於「檔案」App 檢視的 App 私有目錄；macOS/Linux 為您指定的本機目錄）。跨裝置同步的證書金鑰僅存放在作業系統私有的應用程式資料目錄中。</p>
+
+      <h2>3. 選用之點對點跨裝置同步（LAN / Tailscale）</h2>
+      <p>若您啟用內建跨裝置同步，資料僅透過區域網路或您的私人 Tailscale 網路，以雙向 mTLS 1.3 加密與 SHA-256 證書指紋釘紮在<strong>您自己的裝置之間直接傳輸</strong>，絕不經過開發者伺服器或第三方雲端中繼。</p>
+
+      <h2>4. 系統權限用途</h2>
+      <ul>
+        <li><strong>相機（選用，iOS / iPadOS）：</strong>僅在您開啟配對掃碼時，用於掃描您自己電腦端 SilexNib 產生的一次性配對 QR 碼；影像僅於記憶體即時辨識，絕不儲存或上傳。</li>
+        <li><strong>區域網路（選用，iOS / iPadOS）：</strong>僅用於在區域網路或私人網路內，與您已配對的電腦建立加密同步連線。</li>
+        <li><strong>照片圖庫（選用，iOS / iPadOS）：</strong>僅在您主動選擇插入圖片到筆記本地 <code>.assets/</code> 資料夾時讀取所選照片。</li>
+      </ul>
+
+      <h2>5. 聯絡與支援</h2>
+      <p>本隱私權政策如有更新將直接公佈於本頁面。如有任何隱私疑問或技術問題，歡迎前往 <a href="https://github.com/keithxc/silexnib/issues">github.com/keithxc/silexnib/issues</a> 回報。</p>
+    </article>
+
+    <!-- Japanese -->
+    <article class="doc" data-lang="ja">
+      <h1>プライバシーポリシー</h1>
+      <p class="meta">発効日：2026年11月27日 · 対象：SilexNib（iOS / iPadOS / macOS / Linux）</p>
+      <div class="callout">
+        <strong>要約：</strong>SilexNib は個人データを一切収集・送信・共有しません。すべてのノート・手書きデータ・同期鍵はお使いの端末内にのみ保存されます。
+      </div>
+
+      <h2>1. データ収集について</h2>
+      <p>SilexNib は完全オフラインで動作し、アカウント登録もクラウドサーバーも不要です。個人情報、ノート内容、利用状況アナリティクス、広告識別子（IDFA）、第三者トラッキング SDK は一切含みません。</p>
+
+      <h2>2. 端末内ストレージと直接同期</h2>
+      <p>Markdown・添付ファイル・手書きノート（<code>*.snb/</code>・<code>*.ilp</code>）はすべてローカル保存されます。内蔵同期機能を利用する場合も、LAN またはご自身の Tailscale ネットワーク上で mTLS 1.3 による端末間直接通信のみを行い、中継サーバーは一切介在しません。</p>
+
+      <h2>3. システム権限の用途</h2>
+      <ul>
+        <li><strong>カメラ（任意）：</strong>PC 版 SilexNib が表示するワンタイム QR コードの読み取りのみに使用します。</li>
+        <li><strong>ローカルネットワーク（任意）：</strong>ペアリング済み端末との暗号化同期のみに使用します。</li>
+        <li><strong>写真ライブラリ（任意）：</strong>ノートへ画像を挿入する際に選択した写真のみを読み込みます。</li>
+      </ul>
+
+      <h2>4. お問い合わせ</h2>
+      <p>ご質問は <a href="https://github.com/keithxc/silexnib/issues">github.com/keithxc/silexnib/issues</a> までお寄せください。</p>
+    </article>
+
+    <!-- Korean -->
+    <article class="doc" data-lang="ko">
+      <h1>개인정보 처리방침</h1>
+      <p class="meta">시행일: 2026년 11월 27일 · 적용 대상: SilexNib (iOS, iPadOS, macOS, Linux)</p>
+      <div class="callout">
+        <strong>요약:</strong> SilexNib는 어떠한 개인정보도 수집, 전송, 판매 또는 공유하지 않습니다. 모든 노트, 필기 데이터 및 동기화 키는 오직 사용자의 기기 내부에만 저장됩니다.
+      </div>
+
+      <h2>1. 수집하는 정보 없음</h2>
+      <p>SilexNib는 완전한 오프라인 앱으로 계정 가입이나 클라우드 서버가 필요하지 않습니다. 개인 식별 정보, 노트 내용, 사용 분석(텔레메트리), 광고 식별자(IDFA) 및 제3자 추적 SDK를 일절 포함하지 않습니다.</p>
+
+      <h2>2. 로컬 저장 및 기기 간 직접 동기화</h2>
+      <p>모든 Markdown 노트, 첨부 파일 및 필기 노트(<code>*.snb/</code>, <code>*.ilp</code>)는 로컬에만 저장됩니다. 내장 동기화 사용 시에도 LAN 또는 개인 Tailscale 네트워크에서 mTLS 1.3으로 사용자 기기 간 직접 암호화 통신만 수행하며 중계 서버를 거치지 않습니다.</p>
+
+      <h2>3. 시스템 권한 안내</h2>
+      <ul>
+        <li><strong>카메라(선택):</strong> 데스크톱 SilexNib의 일회용 페어링 QR 코드를 스캔할 때만 사용되며 영상은 저장되지 않습니다.</li>
+        <li><strong>로컬 네트워크(선택):</strong> 페어링된 본인의 컴퓨터와 암호화 동기화 통신을 수행할 때만 사용됩니다.</li>
+        <li><strong>사진 보관함(선택):</strong> 사용자가 노트에 사진을 직접 삽입할 때 선택한 항목만 읽어옵니다.</li>
+      </ul>
+
+      <h2>4. 문의</h2>
+      <p>문의 사항은 <a href="https://github.com/keithxc/silexnib/issues">github.com/keithxc/silexnib/issues</a>에 남겨 주세요.</p>
+    </article>
+
+    <!-- German -->
+    <article class="doc" data-lang="de">
+      <h1>Datenschutzerklärung</h1>
+      <p class="meta">Stand: 27. November 2026 · Gilt für SilexNib (iOS, iPadOS, macOS und Linux)</p>
+      <div class="callout">
+        <strong>Kurzfassung:</strong> SilexNib erhebt, überträgt, verkauft oder teilt <strong>keinerlei</strong> personenbezogene Daten. Alle Notizen, Handschrift-Seiten und Synchronisierungsschlüssel bleiben ausschließlich auf Ihren eigenen Geräten.
+      </div>
+
+      <h2>1. Keine Datenerhebung</h2>
+      <p>SilexNib arbeitet vollständig offline und benötigt weder ein Konto noch Cloud-Server. Es werden keine personenbezogenen Daten, keine Notizinhalte, keine Nutzungsstatistiken, keine Werbe-IDs (IDFA) und keine Analyse- oder Tracking-SDKs von Drittanbietern verwendet.</p>
+
+      <h2>2. Lokale Speicherung &amp; direkte Synchronisierung</h2>
+      <p>Ihre Markdown-Dateien, Anhänge und Handschrift-Notizbücher (<code>*.snb/</code>, <code>*.ilp</code>) werden lokal gespeichert. Bei optionaler Synchronisierung kommunizieren Ihre gekoppelten Geräte direkt per gegenseitigem TLS 1.3 (mTLS) mit Zertifikats-Fingerabdruck-Pinning über Ihr lokales Netzwerk oder privates Tailscale — ohne Zwischenserver.</p>
+
+      <h2>3. Systemberechtigungen</h2>
+      <ul>
+        <li><strong>Kamera (optional):</strong> Ausschließlich zum Scannen des einmaligen Kopplungs-QR-Codes Ihrer eigenen Desktop-App.</li>
+        <li><strong>Lokales Netzwerk (optional):</strong> Ausschließlich für die verschlüsselte Direkt-Synchronisierung mit Ihren gekoppelten Rechnern.</li>
+        <li><strong>Fotomediathek (optional):</strong> Ausschließlich beim aktiven Einfügen eines Fotos in den lokalen <code>.assets/</code>-Ordner einer Notiz.</li>
+      </ul>
+
+      <h2>4. Kontakt</h2>
+      <p>Fragen zum Datenschutz richten Sie bitte über <a href="https://github.com/keithxc/silexnib/issues">github.com/keithxc/silexnib/issues</a> an uns.</p>
+    </article>
+  </main>
+
+  <footer class="wrap">
+    <span>&copy; 2026 SilexNib · Zero Tracking · 100% Local.</span>
+    <span>
+      <a href="index.html">Overview</a> ·
+      <a href="support.html">Support</a> ·
+      <a href="https://github.com/keithxc/silexnib">GitHub</a>
+    </span>
+  </footer>
+
+  <script>
+    (function () {
+      var supported = ["en", "zh-TW", "ja", "ko", "de"];
+      function pick(tag) {
+        if (!tag) return "en";
+        var low = tag.toLowerCase();
+        if (low.indexOf("zh-tw") === 0 || low.indexOf("zh-hant") === 0 || low.indexOf("zh-hk") === 0) return "zh-TW";
+        if (low.indexOf("ja") === 0) return "ja";
+        if (low.indexOf("ko") === 0) return "ko";
+        if (low.indexOf("de") === 0) return "de";
+        return "en";
+      }
+      var sel = document.getElementById("langPicker");
+      var saved = null;
+      try { saved = localStorage.getItem("silexnib_lang"); } catch (e) {}
+      var init = supported.indexOf(saved) >= 0 ? saved : pick(navigator.language);
+      document.documentElement.lang = init;
+      sel.value = init;
+      sel.addEventListener("change", function () {
+        document.documentElement.lang = sel.value;
+        try { localStorage.setItem("silexnib_lang", sel.value); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>

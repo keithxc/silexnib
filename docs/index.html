@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SilexNib — Offline Local Markdown &amp; Handwriting Notebooks</title>
+  <meta name="description" content="Pure-native offline local Markdown, physical page-by-page handwriting notebooks, and zero-server mTLS 1.3 sync across macOS, Linux, iPadOS, and iOS. Completely free." />
+  <link rel="icon" type="image/svg+xml" href="assets/silexnib.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/silexnib.svg" alt="SilexNib" />
+        <span>SilexNib</span>
+      </a>
+      <nav class="nav-links">
+        <a class="active" href="index.html">Overview</a>
+        <a href="https://github.com/keithxc/silexnib/blob/main/spec/FORMAT.md">Open Format</a>
+        <a href="https://github.com/keithxc/silexnib/releases">Releases</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <select id="langPicker" class="lang-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="zh-TW">繁體中文（台灣）</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="de">Deutsch</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" data-lang="en">
+      <span class="badge">Pure Native · Offline-First · Free Forever</span>
+      <h1>Local Markdown &amp; Paper-Like Handwriting, Without the Cloud.</h1>
+      <p class="lead">SilexNib unites fast native Markdown, Daily Notes, plain-text/PDF reading, physical page-by-page Apple Pencil notebooks, and zero-server LAN/Tailscale mTLS 1.3 sync across macOS, Linux, iPad, and iPhone.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://github.com/keithxc/silexnib/releases">Download Desktop (macOS / Linux)</a>
+        <a class="btn" href="https://github.com/keithxc/silexnib/blob/main/spec/FORMAT.md">Open ILP1 / .snb Format</a>
+        <a class="btn" href="privacy.html">Privacy Policy</a>
+      </div>
+    </section>
+
+    <section class="hero" data-lang="zh-TW">
+      <span class="badge">純原生編譯 · 離線優先 · 永久免費</span>
+      <h1>離線本地 Markdown 與紙本手寫筆記，無需任何雲端。</h1>
+      <p class="lead">SilexNib 結合純原生 Markdown 即時預覽、每日日記、程式碼與 PDF 檢視、Apple Pencil 實體分頁手寫筆記本，以及零伺服器 LAN / Tailscale mTLS 1.3 跨裝置同步，涵蓋 macOS、Linux、iPad 與 iPhone。</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://github.com/keithxc/silexnib/releases">下載桌面版（macOS / Linux）</a>
+        <a class="btn" href="https://github.com/keithxc/silexnib/blob/main/spec/FORMAT.md">開放手寫格式規範（ILP1 / .snb）</a>
+        <a class="btn" href="privacy.html">隱私權政策</a>
+      </div>
+    </section>
+
+    <section class="hero" data-lang="ja">
+      <span class="badge">ピュアネイティブ · オフライン優先 · 完全無料</span>
+      <h1>ローカル Markdown と紙の質感の手書きノートを、クラウドなしで。</h1>
+      <p class="lead">SilexNib は C++20・Qt 6・UIKit / Metal による高速ネイティブ知識ベースです。Markdown ライブプレビュー、デイリーノート、PDF、ページ単位の手書きノート、サーバー不要の mTLS 1.3 同期を macOS・Linux・iPad・iPhone で提供します。</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://github.com/keithxc/silexnib/releases">デスクトップ版ダウンロード</a>
+        <a class="btn" href="https://github.com/keithxc/silexnib/blob/main/spec/FORMAT.md">オープン手書き仕様 (ILP1 / .snb)</a>
+        <a class="btn" href="privacy.html">プライバシーポリシー</a>
+      </div>
+    </section>
+
+    <section class="hero" data-lang="ko">
+      <span class="badge">순수 네이티브 · 오프라인 우선 · 평생 무료</span>
+      <h1>클라우드 없이 즐기는 로컬 Markdown과 종이 질감 필기 노트.</h1>
+      <p class="lead">SilexNib는 macOS, Linux, iPad, iPhone을 위한 순수 네이티브 지식 저장소입니다. 라이브 프리뷰 Markdown, 데일리 노트, PDF, 페이지 단위 Apple Pencil 필기 노트, 서버 없는 LAN/Tailscale mTLS 1.3 동기화를 무료로 제공합니다.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://github.com/keithxc/silexnib/releases">데스크톱 다운로드</a>
+        <a class="btn" href="https://github.com/keithxc/silexnib/blob/main/spec/FORMAT.md">오픈 필기 규격 (ILP1 / .snb)</a>
+        <a class="btn" href="privacy.html">개인정보 처리방침</a>
+      </div>
+    </section>
+
+    <section class="hero" data-lang="de">
+      <span class="badge">100 % Nativ · Offline-First · Dauerhaft Gratis</span>
+      <h1>Lokales Markdown &amp; Handschrift-Notizbücher — ganz ohne Cloud.</h1>
+      <p class="lead">SilexNib vereint natives Live-Preview-Markdown, Tagesnotizen, Code-/PDF-Ansicht, seitenbasierte Apple-Pencil-Notizbücher und serverlose mTLS-1.3-Synchronisierung (LAN / Tailscale) für macOS, Linux, iPad und iPhone.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://github.com/keithxc/silexnib/releases">Desktop-Downloads</a>
+        <a class="btn" href="https://github.com/keithxc/silexnib/blob/main/spec/FORMAT.md">Offenes Format (ILP1 / .snb)</a>
+        <a class="btn" href="privacy.html">Datenschutz</a>
+      </div>
+    </section>
+
+    <section class="shots">
+      <figure>
+        <img src="assets/preview-markdown-ipad.png" alt="SilexNib Live Preview Markdown" />
+        <figcaption>Pure-native Live Preview · Callouts · GFM Tables · 26+ Syntax Highlighters</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/preview-notebook-ipad.png" alt="SilexNib Physical Handwriting Notebook" />
+        <figcaption>Physical Page-by-Page Metal Handwriting (`*.snb/` + open `ILP1` format)</figcaption>
+      </figure>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Zero Electron &amp; Zero Cloud</h3>
+        <p>Compiled C++20 core shared across macOS, Linux, iPadOS, and iOS. Your notes live strictly as plain local files on your own devices.</p>
+      </div>
+      <div class="card">
+        <h3>Built-in mTLS 1.3 Sync</h3>
+        <p>Direct peer-to-peer sync over LAN or Tailscale with QR fingerprint pinning, isolated per-vault state, and a mass-deletion black-hole circuit breaker.</p>
+      </div>
+      <div class="card">
+        <h3>Open Handwriting Protocol</h3>
+        <p><code>ILP1</code> and <code>*.snb/</code> are dedicated under CC0 1.0 Public Domain with vector PDF and Xournal++ (<code>.xopp</code>) export. Other apps are welcome to interoperate.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <span>&copy; 2026 SilexNib · Free, Offline, Private.</span>
+    <span>
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="support.html">Support</a> ·
+      <a href="https://github.com/keithxc/silexnib">GitHub</a>
+    </span>
+  </footer>
+
+  <script>
+    (function () {
+      var supported = ["en", "zh-TW", "ja", "ko", "de"];
+      function pick(tag) {
+        if (!tag) return "en";
+        var low = tag.toLowerCase();
+        if (low.indexOf("zh-tw") === 0 || low.indexOf("zh-hant") === 0 || low.indexOf("zh-hk") === 0) return "zh-TW";
+        if (low.indexOf("ja") === 0) return "ja";
+        if (low.indexOf("ko") === 0) return "ko";
+        if (low.indexOf("de") === 0) return "de";
+        return "en";
+      }
+      var sel = document.getElementById("langPicker");
+      var saved = null;
+      try { saved = localStorage.getItem("silexnib_lang"); } catch (e) {}
+      var init = supported.indexOf(saved) >= 0 ? saved : pick(navigator.language);
+      document.documentElement.lang = init;
+      sel.value = init;
+      sel.addEventListener("change", function () {
+        document.documentElement.lang = sel.value;
+        try { localStorage.setItem("silexnib_lang", sel.value); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>

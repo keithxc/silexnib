@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support &amp; FAQ — SilexNib</title>
+  <meta name="description" content="Support, FAQ, cross-device sync setup, and issue tracker for SilexNib." />
+  <link rel="icon" type="image/svg+xml" href="assets/silexnib.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/silexnib.svg" alt="SilexNib" />
+        <span>SilexNib</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Overview</a>
+        <a href="https://github.com/keithxc/silexnib/blob/main/spec/FORMAT.md">Open Format</a>
+        <a href="https://github.com/keithxc/silexnib/releases">Releases</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="active" href="support.html">Support</a>
+        <select id="langPicker" class="lang-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="zh-TW">繁體中文（台灣）</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="de">Deutsch</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="doc" data-lang="en">
+      <h1>Support &amp; FAQ</h1>
+      <p class="meta">Need help with SilexNib on macOS, Linux, iPadOS, or iOS? Open a ticket on <a href="https://github.com/keithxc/silexnib/issues">GitHub Issues</a>.</p>
+
+      <h2>How do I pair my iPad / iPhone with my computer?</h2>
+      <p>On Desktop SilexNib (macOS or Linux), open your real vault folder and click <strong>Sync</strong> in the bottom status bar (or <code>File → Sync &amp; Devices…</code>). Select your LAN or Tailscale address to display a one-time QR code. On iPad/iPhone, open Sidebar <strong>Settings → Pair via QR / Link</strong>, scan the QR code, verify the SHA-256 fingerprint, and approve. SilexNib automatically creates a dedicated folder in App Private Storage (visible in Apple Files under <code>On My iPad/iPhone → Silex</code>) and pulls your vault from zero.</p>
+
+      <h2>Where are synced vaults stored on PC, and can I move them?</h2>
+      <p>New desktop pairings default to <code>~/SilexVaults/&lt;VaultName&gt;</code> (customizable during pairing or in the Sync dialog). You can move any vault later via <code>File → Move Vault Location…</code> without re-pairing your devices.</p>
+
+      <h2>Why is handwriting view-only on iPhone?</h2>
+      <p>iPad is designed for full Apple Pencil authoring; iPhone focuses on fast Markdown/Daily Notes editing and compact reading. Handwritten notebooks (<code>*.snb/</code> and <code>*.ilp</code>) open in strict view-only mode on iPhone with zoom, pan, page flipping, and PDF/<code>.xopp</code> export so accidental pocket touches never modify strokes.</p>
+
+      <h2>Can other tools read my SilexNib files?</h2>
+      <p>Yes! Notes are standard UTF-8 Markdown, attachments live in sibling <code>./&lt;note&gt;.assets/</code> folders, and handwriting pages follow our open <a href="https://github.com/keithxc/silexnib/blob/main/spec/FORMAT.md">CC0 1.0 <code>ILP1</code> / <code>*.snb/</code> specification</a> with native export to vector PDF and Xournal++ (<code>.xopp</code>).</p>
+    </article>
+
+    <article class="doc" data-lang="zh-TW">
+      <h1>技術支援與常見問題</h1>
+      <p class="meta">使用 SilexNib（macOS、Linux、iPadOS、iOS）遇到任何問題或有建議，歡迎前往 <a href="https://github.com/keithxc/silexnib/issues">GitHub Issues</a> 回報。</p>
+
+      <h2>如何將 iPad / iPhone 與電腦配對同步？</h2>
+      <p>在桌面版 SilexNib 打開您的真實知識庫後，點右下角狀態列「跨裝置同步」（或 <code>檔案 → 跨裝置同步與配對…</code>）選擇區網或 Tailscale 位址顯示一次性 QR 碼。在 iPad / iPhone 側邊欄進入 <strong>設定 → 掃描 QR 碼或貼上連結</strong>，掃碼核對指紋並同意後，App 會自動在私有目錄（可於系統「檔案」App 的 <code>我的 iPad/iPhone → Silex</code> 查看）建立同名資料夾並從 0 完整拉取。</p>
+
+      <h2>電腦端同步目錄在哪裡？可以搬移嗎？</h2>
+      <p>新配對的電腦預設存放於 <code>~/SilexVaults/&lt;知識庫名&gt;</code>（可於配對時或同步視窗手動變更）。日後隨時可在軟體內透過 <code>檔案 → 遷移知識庫位置…</code> 無縫搬移，無需重新配對。</p>
+
+      <h2>為什麼 iPhone 上的手寫筆記是唯讀模式？</h2>
+      <p>iPad 主打 Apple Pencil 完整手寫創作；iPhone 主打高效 Markdown / 日記輸入與行動查閱。手寫筆記（<code>*.snb/</code>、<code>*.ilp</code>）在 iPhone 上採嚴格唯讀檢視（支援雙指縮放、翻頁與匯出 PDF / <code>.xopp</code>），避免誤觸改動筆跡。</p>
+
+      <h2>其他軟體可以讀取 SilexNib 的檔案嗎？</h2>
+      <p>完全可以！筆記為標準 UTF-8 Markdown、附件位於 <code>./&lt;筆記名&gt;.assets/</code>，手寫筆記遵循以 CC0 1.0 公開的 <a href="https://github.com/keithxc/silexnib/blob/main/spec/FORMAT.md"><code>ILP1</code> / <code>*.snb/</code> 開放格式規範</a>，並可匯出向量 PDF 與 Xournal++（<code>.xopp</code>）。</p>
+    </article>
+
+    <article class="doc" data-lang="ja">
+      <h1>サポート &amp; FAQ</h1>
+      <p class="meta">不具合報告やご要望は <a href="https://github.com/keithxc/silexnib/issues">GitHub Issues</a> にて受け付けています。</p>
+      <h2>iPad / iPhone と PC のペアリング方法</h2>
+      <p>デスクトップ版 SilexNib で保管庫を開き、ステータスバーの「同期」から QR コードを表示します。iPad / iPhone の「設定 → QR／リンクでペアリング」で読み取り、フィンガープリントを確認して承認すると、アプリ専用フォルダへ自動同期されます。</p>
+      <h2>PC の保管庫を移動できますか？</h2>
+      <p>はい。PC 版はデフォルトで <code>~/SilexVaults/&lt;保管庫名&gt;</code> を使用し、メニューの「保管庫の場所を移動…」からペアリングを維持したまま安全に移動できます。</p>
+      <h2>オープンフォーマットについて</h2>
+      <p>手書き形式（<code>ILP1</code> / <code>*.snb/</code>）は <a href="https://github.com/keithxc/silexnib/blob/main/spec/FORMAT.md">CC0 1.0 で完全公開</a> されており、PDF および Xournal++（<code>.xopp</code>）への書き出しにも対応しています。</p>
+    </article>
+
+    <article class="doc" data-lang="ko">
+      <h1>지원 및 자주 묻는 질문</h1>
+      <p class="meta">버그 제보 및 기능 제안은 <a href="https://github.com/keithxc/silexnib/issues">GitHub Issues</a>를 이용해 주세요.</p>
+      <h2>iPad / iPhone과 컴퓨터 페어링 방법</h2>
+      <p>데스크톱 SilexNib에서 보관함을 연 뒤 하단 상태 표시줄의 「동기화」를 눌러 일회용 QR 코드를 표시하세요. iPad / iPhone 설정에서 「QR / 링크로 페어링」으로 스캔하고 지문을 확인하면 앱 전용 저장소로 자동 동기화됩니다.</p>
+      <h2>PC 보관함 위치를 바꿀 수 있나요?</h2>
+      <p>네. PC는 기본적으로 <code>~/SilexVaults/&lt;보관함&gt;</code> 경로를 사용하며, 앱 내 「보관함 위치 이동…」 메뉴로 재페어링 없이 안전하게 이동할 수 있습니다.</p>
+      <h2>오픈 필기 포맷</h2>
+      <p><code>ILP1</code> 및 <code>*.snb/</code> 규격은 <a href="https://github.com/keithxc/silexnib/blob/main/spec/FORMAT.md">CC0 1.0 퍼블릭 도메인</a>으로 공개되어 있으며 벡터 PDF 및 Xournal++(<code>.xopp</code>) 내보내기를 지원합니다.</p>
+    </article>
+
+    <article class="doc" data-lang="de">
+      <h1>Support &amp; FAQ</h1>
+      <p class="meta">Fehlerberichte und Vorschläge bitte über <a href="https://github.com/keithxc/silexnib/issues">GitHub Issues</a> einreichen.</p>
+      <h2>Wie kopple ich iPad / iPhone mit meinem Computer?</h2>
+      <p>Öffnen Sie Ihren Tresor in SilexNib auf macOS/Linux und klicken Sie unten rechts auf „Synchronisierung“, um einen Einmal-QR-Code anzuzeigen. Scannen Sie ihn unter iOS/iPadOS über „Einstellungen → Per QR / Link koppeln“ und bestätigen Sie den Fingerabdruck.</p>
+      <h2>Kann ich den Speicherort auf dem PC verschieben?</h2>
+      <p>Ja. Auf dem PC ist standardmäßig <code>~/SilexVaults/&lt;Tresor&gt;</code> voreingestellt und lässt sich jederzeit über „Datei → Tresor-Speicherort verschieben…“ ohne erneute Kopplung umziehen.</p>
+      <h2>Offenes Handschrift-Format</h2>
+      <p><code>ILP1</code> und <code>*.snb/</code> stehen unter <a href="https://github.com/keithxc/silexnib/blob/main/spec/FORMAT.md">CC0 1.0 Public Domain</a> und lassen sich als Vektor-PDF sowie Xournal++ (<code>.xopp</code>) exportieren.</p>
+    </article>
+  </main>
+
+  <footer class="wrap">
+    <span>&copy; 2026 SilexNib · Support</span>
+    <span>
+      <a href="index.html">Overview</a> ·
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="https://github.com/keithxc/silexnib/issues">GitHub Issues</a>
+    </span>
+  </footer>
+
+  <script>
+    (function () {
+      var supported = ["en", "zh-TW", "ja", "ko", "de"];
+      function pick(tag) {
+        if (!tag) return "en";
+        var low = tag.toLowerCase();
+        if (low.indexOf("zh-tw") === 0 || low.indexOf("zh-hant") === 0 || low.indexOf("zh-hk") === 0) return "zh-TW";
+        if (low.indexOf("ja") === 0) return "ja";
+        if (low.indexOf("ko") === 0) return "ko";
+        if (low.indexOf("de") === 0) return "de";
+        return "en";
+      }
+      var sel = document.getElementById("langPicker");
+      var saved = null;
+      try { saved = localStorage.getItem("silexnib_lang"); } catch (e) {}
+      var init = supported.indexOf(saved) >= 0 ? saved : pick(navigator.language);
+      document.documentElement.lang = init;
+      sel.value = init;
+      sel.addEventListener("change", function () {
+        document.documentElement.lang = sel.value;
+        try { localStorage.setItem("silexnib_lang", sel.value); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E2128"/>
+      <stop offset="100%" stop-color="#121419"/>
+    </linearGradient>
+  </defs>
+  <!-- Matte dark squircle -->
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#bg)"/>
+  <rect x="103" y="103" width="818" height="818" rx="183" fill="none" stroke="#A6ACB8" stroke-opacity="0.18" stroke-width="6"/>
+
+  <!-- Minimalist Bauhaus Geometric 'S': two shifted opposing semicircles + signal-orange dot -->
+  <g transform="translate(500, 524) rotate(-32)">
+    <!-- Upper neutral-gray semicircle (clearly visible on both dark & light backgrounds) -->
+    <path d="M -110 -22 A 176 176 0 0 1 242 -22 Z" fill="#8A909B"/>
+    <!-- Lower cobalt-sky semicircle (shift left along chord) -->
+    <path d="M -242 22 A 176 176 0 0 0 110 22 Z" fill="#4F8EF7"/>
+  </g>
+
+  <!-- Signal orange dot (daily note / spark) -->
+  <circle cx="742" cy="282" r="46" fill="#FF6B2C"/>
+</svg>
