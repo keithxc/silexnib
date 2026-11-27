@@ -71,7 +71,7 @@
 - **Minimalist QR Pairing**: Scan a one-time 5-minute QR code from Desktop SilexNib to bind iPad/iPhone; desktop-to-desktop mutual approval over LAN or Tailscale.
 - **Safe Local Storage by Default**:
   - **iPad / iPhone**: Automatically creates an isolated empty vault in App Private Storage (`On My iPad/iPhone → Silex → <VaultName>`) and pulls cleanly from zero.
-  - **macOS / Linux**: Defaults to `~/SilexVaults/<VaultName>` (customizable) and includes in-app **Move Vault Location…** migration without re-pairing.
+  - **macOS / Linux**: Defaults to `~/silexnib/<VaultName>` (customizable) and includes in-app **Move Vault Location…** migration without re-pairing, plus a background auto-sync switch (auto-enabled once paired, toggleable manually or declaratively via Nix).
 - **Anti-Black-Hole Safety**: Demo Vault is hard-excluded from sync, manifests/baselines are isolated per vault, deletions move safely to `99_trash/`, `.ilp` & `.snb` merge losslessly via HLC + tombstones, and a mass-deletion circuit breaker halts sync if `>80%` of `>=10` files suddenly vanish.
 
 ---

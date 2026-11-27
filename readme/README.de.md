@@ -38,7 +38,7 @@
 
 - **Native Live-Vorschau & Tagesnotizen**: GFM-Tabellen, Callouts, Syntax-Highlighting für 26+ Sprachen, `[[Wikilinks]]` mit automatischer Link-Aktualisierung beim Umbenennen.
 - **Seitenbasierte Handschrift-Notizbücher (`*.snb/` + `ILP1`)**: Feste Papierformate (A5 / B5 / A4 / iPad 3:4). Auf dem iPad ereignisgesteuertes Metal-Rendering (~0 % Leerlauf-CPU) mit Apple Pencil; auf dem iPhone schreibgeschützte Ansicht & Export als Vektor-PDF oder Xournal++ (`.xopp`).
-- **Serverlose mTLS-1.3-Synchronisierung (LAN / Tailscale)**: Einmal-QR-Code-Kopplung mit Zertifikats-Fingerabdruck-Pinning. iPad/iPhone nutzen automatisch den privaten App-Speicher, PC nutzt standardmäßig `~/SilexVaults/<Tresor>` inklusive Tresor-Umzug in der App und Schutz vor versehentlicher Massenlöschung.
+- **Serverlose mTLS-1.3-Synchronisierung (LAN / Tailscale)**: Einmal-QR-Code-Kopplung mit Zertifikats-Fingerabdruck-Pinning. iPad/iPhone nutzen automatisch den privaten App-Speicher, PC nutzt standardmäßig `~/silexnib/<Tresor>` inklusive Tresor-Umzug, Hintergrund-Synchronisierungsschalter (nach Kopplung automatisch aktiv, manuell oder deklarativ via Nix steuerbar) und Schutz vor Massenlöschung.
 
 ## Offenes Handschrift-Protokoll — Kompatibilität willkommen
 
