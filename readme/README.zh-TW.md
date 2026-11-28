@@ -54,7 +54,7 @@
 
 ## 開放手寫格式規範（歡迎生態系相容互通）
 
-SilexNib 應用程式免費提供使用（程式碼不開源），但**底層手寫檔案格式（`ILP1` 與 `*.snb/`）以 [CC0 1.0 公眾領域](LICENSE-SPEC) 完全公開**：
+SilexNib 應用程式免費提供使用（程式碼不開源），但**底層手寫檔案格式（`ILP1` 與 `*.snb/`）以 [CC0 1.0 公眾領域](../LICENSE-SPEC) 完全公開**：
 
 - 完整二進位與 JSON 規範：**[`spec/FORMAT.md`](../spec/FORMAT.md)**
 - 單標頭檔純 C99 編解碼與 CRDT 合併庫（`stb` 風格、零外部相依）：**[`spec/ilp1.h`](../spec/ilp1.h)**（測試：[`spec/ilp1_test.c`](../spec/ilp1_test.c)）
@@ -64,9 +64,18 @@ SilexNib 應用程式免費提供使用（程式碼不開源），但**底層手
 
 ---
 
-## 下載與回饋
+## 下載、Nix 二進位安裝與回饋
 
 - **iPad / iPhone**：透過 Apple App Store / TestFlight 安裝 **SilexNib**
-- **macOS / Linux**：前往 **[GitHub Releases](https://github.com/keithxc/silexnib/releases)** 下載
+- **macOS（Apple Silicon）**：前往 **[GitHub Releases](https://github.com/keithxc/silexnib/releases)** 下載 `.dmg` 或 `.zip`
+- **Linux（x86_64，`glibc >= 2.39`）**：前往 **[GitHub Releases](https://github.com/keithxc/silexnib/releases)** 下載各發行版原生套件：
+  - **Debian / Ubuntu / Mint / Pop!_OS**：`silex_<ver>_amd64.deb`
+  - **Fedora / openSUSE / RHEL / Bazzite**：`silex-<ver>.x86_64.rpm`
+  - **Arch / CachyOS / Manjaro**：`silex-<ver>-x86_64.pkg.tar.zst`
+  - **通用單檔 AppImage**：`Silex-<ver>-x86_64.AppImage`
+  - **Flatpak**：`Silex-<ver>-x86_64.flatpak`
+  - **可攜壓縮包**：`silex-<ver>-linux-x86_64.tar.gz`
+- **NixOS / nix-darwin / Home Manager（預編譯二進位 Flake）**：`nix run github:keithxc/silexnib`（並提供 `nixosModules.silex`、`darwinModules.silex` 與 `homeManagerModules.silex`）
+- **授權與第三方聲明**：閉源免費軟體（[LICENSE](../LICENSE)），第三方開源元件聲明（含動態連結 Qt 6 LGPL-3.0 與 PDFium Apache-2.0/BSD-3-Clause）見 [THIRD_PARTY_LICENSES.md](../THIRD_PARTY_LICENSES.md)
 - **隱私權政策**：[https://keithxc.github.io/silexnib/privacy.html](https://keithxc.github.io/silexnib/privacy.html)
 - **問題回報與建議**：[GitHub Issues](https://github.com/keithxc/silexnib/issues)

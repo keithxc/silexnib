@@ -47,7 +47,7 @@
 | Platform | Engine | Capabilities |
 | --- | --- | --- |
 | **macOS (Apple Silicon)** | Pure C++20 + Qt 6 + AppKit + PDFKit | Full Markdown Live Preview, Daily Notes, code/plain-text, PDF, mouse/keyboard `.snb`/`.ilp` editing, built-in mTLS 1.3 LAN/Tailscale sync, vault migration |
-| **Linux (Wayland / X11)** | Pure C++20 + Qt 6 + Poppler | Full desktop parity with frameless native chrome, Fcitx5 CJK IME, mouse/keyboard `.snb`/`.ilp` editing, built-in mTLS 1.3 sync |
+| **Linux (Wayland / X11)** | Pure C++20 + Qt 6 + PDFium | Full desktop parity with frameless native chrome, Fcitx5 CJK IME, mouse/keyboard `.snb`/`.ilp` editing, built-in mTLS 1.3 sync |
 | **iPadOS (iPad)** | Pure C++20 + Swift + UIKit + Metal + PDFKit | Flagship Apple Pencil page-by-page handwriting (`0%` idle CPU), Live Preview Markdown, Daily Notes, PDF, global search, QR-paired LAN/Tailscale sync into App Private Storage |
 | **iOS (iPhone)** | Pure C++20 + Swift + UIKit + Metal + PDFKit | Full Markdown/Daily Notes/plain-text editing, PDF & full-text search, QR-paired LAN/Tailscale sync; handwriting notebooks (`.snb`/`.ilp`) are **view-only + export** (zoom, pan, flip pages, export PDF/`.xopp`) |
 
@@ -88,9 +88,23 @@ We warmly encourage other Markdown editors, handwriting apps, sync tools, and co
 
 ---
 
-## Downloads & Feedback
+## Downloads & Nix Binary Installation
 
 - **iPad & iPhone**: Available via Apple App Store / TestFlight (**SilexNib**)
-- **macOS & Linux**: Download desktop packages from **[GitHub Releases](https://github.com/keithxc/silexnib/releases)**
+- **macOS (Apple Silicon)**: Download signed `.dmg` or `.zip` from **[GitHub Releases](https://github.com/keithxc/silexnib/releases)**
+- **Linux (x86_64, `glibc >= 2.39`)**: Download native packages from **[GitHub Releases](https://github.com/keithxc/silexnib/releases)**:
+  - **Debian / Ubuntu / Mint / Pop!_OS**: `silex_<ver>_amd64.deb` (`sudo apt install ./silex_<ver>_amd64.deb`)
+  - **Fedora / openSUSE / RHEL / Bazzite**: `silex-<ver>.x86_64.rpm` (`sudo dnf install ./silex-<ver>.x86_64.rpm`)
+  - **Arch / CachyOS / Manjaro**: `silex-<ver>-x86_64.pkg.tar.zst` (`sudo pacman -U ./silex-<ver>-x86_64.pkg.tar.zst`)
+  - **Universal AppImage**: `Silex-<ver>-x86_64.AppImage` (`chmod +x` and run)
+  - **Flatpak**: `Silex-<ver>-x86_64.flatpak` (`flatpak install --user ./Silex-<ver>-x86_64.flatpak`)
+  - **Portable tarball**: `silex-<ver>-linux-x86_64.tar.gz`
+- **NixOS / nix-darwin / Home Manager (Prebuilt Binary Flake)**:
+  ```bash
+  # Run directly without compiling from source
+  nix run github:keithxc/silexnib
+  ```
+  Or add `inputs.silex.url = "github:keithxc/silexnib";` to your system flake and enable `services.silex.enable = true;` (`nixosModules.silex` / `darwinModules.silex`) or `programs.silex.enable = true;` (`homeManagerModules.silex`).
+- **License & Notices**: Free proprietary binaries ([LICENSE](LICENSE)); third-party open-source attributions including dynamically linked Qt 6 (LGPL-3.0) and PDFium (Apache-2.0/BSD-3-Clause) in [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md).
 - **UI Languages**: Strictly 5 languages — English (`en`), Taiwan Traditional Chinese (`zh-TW`), Japanese (`ja`), Korean (`ko`), and German (`de`)
 - **Privacy & Support**: [Privacy Policy](https://keithxc.github.io/silexnib/privacy.html) · [Support & FAQ](https://keithxc.github.io/silexnib/support.html) · [Report an Issue](https://github.com/keithxc/silexnib/issues)

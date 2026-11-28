@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "tag": "v1.0.0",
+  "linux_x86_64": {
+    "filename": "silex-1.0.0-linux-x86_64.tar.gz",
+    "url": "https://github.com/keithxc/silexnib/releases/download/v1.0.0/silex-1.0.0-linux-x86_64.tar.gz",
+    "hash": "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  "macos_arm64": {
+    "filename": "Silex-1.0.0-macos-arm64.zip",
+    "url": "https://github.com/keithxc/silexnib/releases/download/v1.0.0/Silex-1.0.0-macos-arm64.zip",
+    "hash": "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  "macos_arm64_dmg": {
+    "filename": "Silex-1.0.0-macos-arm64.dmg",
+    "url": "https://github.com/keithxc/silexnib/releases/download/v1.0.0/Silex-1.0.0-macos-arm64.dmg"
+  },
+  "linux_x86_64_deb": {
+    "filename": "silex_1.0.0_amd64.deb",
+    "url": "https://github.com/keithxc/silexnib/releases/download/v1.0.0/silex_1.0.0_amd64.deb"
+  },
+  "linux_x86_64_rpm": {
+    "filename": "silex-1.0.0.x86_64.rpm",
+    "url": "https://github.com/keithxc/silexnib/releases/download/v1.0.0/silex-1.0.0.x86_64.rpm"
+  },
+  "linux_x86_64_arch": {
+    "filename": "silex-1.0.0-x86_64.pkg.tar.zst",
+    "url": "https://github.com/keithxc/silexnib/releases/download/v1.0.0/silex-1.0.0-x86_64.pkg.tar.zst"
+  },
+  "linux_x86_64_appimage": {
+    "filename": "Silex-1.0.0-x86_64.AppImage",
+    "url": "https://github.com/keithxc/silexnib/releases/download/v1.0.0/Silex-1.0.0-x86_64.AppImage"
+  },
+  "linux_x86_64_flatpak": {
+    "filename": "Silex-1.0.0-x86_64.flatpak",
+    "url": "https://github.com/keithxc/silexnib/releases/download/v1.0.0/Silex-1.0.0-x86_64.flatpak"
+  }
+}

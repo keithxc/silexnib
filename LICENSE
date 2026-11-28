@@ -1,0 +1,62 @@
+Silex / SilexNib Proprietary Freeware License
+Copyright (c) 2026 Keith (keithxc). All rights reserved.
+
+1. Grant of Free Use License
+   Subject to the terms of this License, the copyright holder hereby grants you
+   a non-exclusive, non-transferable, worldwide, royalty-free, perpetual license
+   to download, install, and use the Silex / SilexNib binary software ("the
+   Software") free of charge for personal, educational, academic, or commercial
+   use on all supported platforms (macOS, Linux, iPadOS, and iOS).
+
+2. Proprietary Source Code
+   The Software is licensed, not sold. All right, title, and interest in and to
+   the Software and its underlying source code remain exclusively with the
+   copyright holder. No license to the application source code is granted under
+   this License.
+
+3. Permitted Unmodified Redistribution (Package Managers & Mirrors)
+   Automated package managers, software distributions, and archival mirrors
+   (including, without limitation, Nix, NixOS, Nixpkgs, nix-darwin, Home
+   Manager, Homebrew Cask, and Linux distribution repositories) are explicitly
+   permitted to fetch, package, wrap (such as ELF patchelf/runtime wrapping
+   without altering application behavior), and redistribute official, unmodified
+   binary releases published at:
+     https://github.com/keithxc/silexnib/releases
+   provided that:
+   (a) this License and THIRD_PARTY_LICENSES.md are preserved intact;
+   (b) no fee is charged for the Software itself; and
+   (c) modified, patched, repacked-with-adware, or rebranded binaries are not
+       distributed as Silex or SilexNib.
+
+4. Restrictions & LGPL-3.0 Dynamic Library Carve-Out
+   Except as expressly permitted by this License or applicable law, you may not
+   sell, rent, sublicense, or modify the Software, nor decompile, disassemble,
+   or reverse engineer the Software.
+
+   LGPL-3.0 Carve-Out: Nothing in this License restricts your rights under the
+   GNU Lesser General Public License v3.0 (LGPL-3.0) with respect to dynamically
+   linked LGPL-3.0 libraries bundled with or used by the Software (such as Qt 6),
+   including replacing those shared libraries with compatible versions or
+   performing reverse engineering solely to the extent necessary to debug
+   modifications to those LGPL-3.0 libraries.
+
+5. User Data & Open File Formats (ILP1 / *.snb/)
+   You retain 100% ownership of all notes, files, images, and notebooks created
+   or edited with the Software. The Silex handwriting file format specifications
+   (ILP1 *.ilp and *.snb/) and reference interoperability tools published in the
+   public SilexNib repository are separately dedicated to the Public Domain
+   under CC0 1.0 Universal so your data remains permanently open and portable.
+
+6. Third-Party Open-Source Components
+   The Software incorporates or dynamically links third-party open-source
+   libraries listed in THIRD_PARTY_LICENSES.md, each governed by its respective
+   license.
+
+7. Disclaimer of Warranty & Limitation of Liability
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
+   WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF,
+   OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.

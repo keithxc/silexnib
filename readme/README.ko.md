@@ -48,4 +48,12 @@ SilexNib 앱 바이너리는 무료로 배포(소스 비공개)되지만, **필�
 - 단일 헤더 순수 C99 코덱 & CRDT 병합 라이브러리(`stb` 스타일, 의존성 없음): [`spec/ilp1.h`](../spec/ilp1.h) (테스트: [`spec/ilp1_test.c`](../spec/ilp1_test.c))
 - Python 3 참조 파서: [`spec/ilp1_tool.py`](../spec/ilp1_tool.py)
 
-다른 노트 앱과 변환 도구의 호환 구현을 환영합니다. 버그 제보 및 제안은 [GitHub Issues](https://github.com/keithxc/silexnib/issues)를 이용해 주세요.
+다른 노트 앱과 변환 도구의 호환 구현을 환영합니다.
+
+## 다운로드 및 Nix 바이너리 설치
+
+- **iPad / iPhone**: Apple App Store / TestFlight(**SilexNib**)
+- **macOS / Linux (x86_64, `glibc >= 2.39`)**: [GitHub Releases](https://github.com/keithxc/silexnib/releases)에서 `.dmg` / `.zip` 및 `.deb` / `.rpm` / `.pkg.tar.zst` / `.AppImage` / `.flatpak` / `.tar.gz` 제공
+- **NixOS / nix-darwin / Home Manager**: `nix run github:keithxc/silexnib` (`nixosModules.silex`, `darwinModules.silex`, `homeManagerModules.silex` 지원)
+- **라이선스**: 무료 독점 바이너리([LICENSE](../LICENSE)) 및 서드파티 고지([THIRD_PARTY_LICENSES.md](../THIRD_PARTY_LICENSES.md))
+- 버그 제보 및 제안: [GitHub Issues](https://github.com/keithxc/silexnib/issues)

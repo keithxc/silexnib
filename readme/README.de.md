@@ -48,4 +48,12 @@ Die SilexNib-Anwendung ist kostenlos nutzbar (Quellcode proprietär), während *
 - Single-Header-C99-Codec & CRDT-Merger (`stb`-Stil, ohne Abhängigkeiten): [`spec/ilp1.h`](../spec/ilp1.h) (Tests: [`spec/ilp1_test.c`](../spec/ilp1_test.c))
 - Python-3-Referenzparser: [`spec/ilp1_tool.py`](../spec/ilp1_tool.py)
 
-Andere Apps und Konverter sind herzlich eingeladen, `ILP1` und `*.snb/` zu unterstützen. Feedback und Fehlerberichte bitte über [GitHub Issues](https://github.com/keithxc/silexnib/issues).
+Andere Apps und Konverter sind herzlich eingeladen, `ILP1` und `*.snb/` zu unterstützen.
+
+## Downloads & Nix-Binärinstallation
+
+- **iPad / iPhone**: Apple App Store / TestFlight (**SilexNib**)
+- **macOS / Linux (x86_64, `glibc >= 2.39`)**: `.dmg` / `.zip` sowie `.deb`, `.rpm`, `.pkg.tar.zst`, `.AppImage`, `.flatpak` und `.tar.gz` über [GitHub Releases](https://github.com/keithxc/silexnib/releases)
+- **NixOS / nix-darwin / Home Manager**: `nix run github:keithxc/silexnib` (inkl. `nixosModules.silex`, `darwinModules.silex`, `homeManagerModules.silex`)
+- **Lizenz**: Kostenlose proprietäre Binärpakete ([LICENSE](../LICENSE)), Drittanbieter-Hinweise in [THIRD_PARTY_LICENSES.md](../THIRD_PARTY_LICENSES.md)
+- Feedback & Fehlerberichte: [GitHub Issues](https://github.com/keithxc/silexnib/issues)

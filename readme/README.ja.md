@@ -48,4 +48,12 @@
 - 単一ヘッダー純 C99 コーデック＆CRDT マージ（`stb` 形式・依存ゼロ）：[`spec/ilp1.h`](../spec/ilp1.h)（テスト：[`spec/ilp1_test.c`](../spec/ilp1_test.c)）
 - Python 3 リファレンスパーサー：[`spec/ilp1_tool.py`](../spec/ilp1_tool.py)
 
-他社ノートアプリ・変換ツールからの読み書き互換実装を歓迎します。お問い合わせ・バグ報告は [GitHub Issues](https://github.com/keithxc/silexnib/issues) へどうぞ。
+他社ノートアプリ・変換ツールからの読み書き互換実装を歓迎します。
+
+## ダウンロード・Nix バイナリ導入
+
+- **iPad / iPhone**：Apple App Store / TestFlight（**SilexNib**）
+- **macOS / Linux（x86_64・`glibc >= 2.39`）**：[GitHub Releases](https://github.com/keithxc/silexnib/releases) から `.dmg` / `.zip` および `.deb` / `.rpm` / `.pkg.tar.zst` / `.AppImage` / `.flatpak` / `.tar.gz` を配布
+- **NixOS / nix-darwin / Home Manager**：`nix run github:keithxc/silexnib`（`nixosModules.silex` / `darwinModules.silex` / `homeManagerModules.silex` 対応）
+- **ライセンス**：無料プロプライエタリ（[LICENSE](../LICENSE)）・サードパーティ表記（[THIRD_PARTY_LICENSES.md](../THIRD_PARTY_LICENSES.md)）
+- お問い合わせ・バグ報告：[GitHub Issues](https://github.com/keithxc/silexnib/issues)
